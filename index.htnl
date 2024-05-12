@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sand-proxy</title>
+<meta charset="utf-8">
+<meta name=”description” content=”Proxy”>
+</head>
+<body>
+    <input type="text" id="urlInput" placeholder="行きたいサイトへのURL">
+    <button onclick="loadUrl()">行く</button>
+    <iframe id="browserFrame" width="1000" height="600"></iframe>
+
+    <script>
+    function loadUrl() {
+        var url = document.getElementById("urlInput").value;
+        document.getElementById("browserFrame").src = url;
+    }
+    </script>
+</body>
+</html>
